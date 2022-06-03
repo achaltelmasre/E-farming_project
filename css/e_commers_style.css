@@ -1,0 +1,111 @@
+.product-card{
+    box-shadow: 0px 0px 10px rgb(161, 158, 158);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.80;
+    border: 1px solid black;
+    width: 350px;
+    height:300px;
+    background-color: white;
+}
+.product-card:hover{
+    box-shadow: 0px 0px 10px rgb(161, 158, 158);
+    padding: 12px;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: wheat;
+    transform: 0.82;
+}
+        
+.product-img{
+    width: 200px;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.button{
+    border-radius: 15px;
+}
+.trolly{
+    height: 30px;
+    width:30px;
+}
+.icon{
+  border-radius: 15%;
+  width:80px;
+  padding: 5px;
+}
+
+.shopping{
+    padding: 20px;
+}
+.shoppingicon{
+    background-size: cover;
+    width:auto;
+}
+.shopping-product{
+    width:70px;
+    height:70px;
+    padding:10px;
+}
+.fashion-card{
+    height:200px;
+    display: block;
+    width:400px;
+    padding: 5px;
+    box-shadow: 0px 0px 15px rgb(78, 12, 12);
+    border-radius: 30px;
+    transition: 0.85;
+}
+.fashion-card:hover{
+    height:200px;
+    display: block;
+    width:410px;
+    padding: 5px;
+    box-shadow: 0px 0px 15px rgb(223, 42, 42);
+    border-radius: 30px;
+    transform:0.80 ;
+}
+
+.about{
+    font-size: 50px;
+    color: white;
+}
+.img{
+    height: 100px;
+    width: 150px;
+}
+.header{
+    padding-left: 100px;
+    padding-left: 100px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: larger;
+    
+}
+.home{
+    background-image: url(../assest/img/pic_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style:oblique;
+        font-size: 50px;
+        color: white;
+        text-shadow:0px 0px 5px #d12a0d;
+    }
+    .agro{
+        background-image: url(../assest/img/agro_back.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        height: auto;
+    }

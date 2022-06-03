@@ -1,0 +1,85 @@
+
+.home{
+    background-image: url(../assest/img/pic_3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+
+}
+.login{
+    margin-top:20px;
+    height:300px;
+    width:350px;
+    box-shadow:0px 0px 25px white;
+    border-radius:20px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    transition: 0.85;
+    padding: 7px;
+    background-image: none;
+    
+}
+.log-in{
+    background-color: #F4D03F;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
+    
+}
+h1{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style:oblique;
+    font-size: 50px;
+    color: white;
+    text-shadow:0px 0px 5px #d12a0d;
+}
+.nav{
+    color: white;
+}
+.header{
+    padding-left: 100px;
+    padding-left: 100px;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: larger;
+    
+}
+.footer{
+    padding: 70px 20px 15px;
+    background-image: linear-gradient(#163049,#13a747);
+    color: white;
+  }
+  .footer-logo{
+      width: 100px;
+      margin-top: 5px;
+      margin-bottom: 5x;
+  }
+  .footer h4{
+      text-align: left;
+      margin-top: 15px;
+      margin-bottom: 25px;
+  }
+  .footer p{
+      font-size: 12px;
+      text-align: justify;
+      padding-right: 35px;
+  }
+  .footer .row .fa{
+      padding-right: 20px;
+      font-size: 15px;
+  }
+  .footer hr{
+      margin-top: 10px;
+      background: lightgrey;
+  }
+  .fa-heart{
+      margin: 0 5px;
+      color: red;
+  }
+  .footer .copyright{
+      text-align: center;
+  }
+h3{
+    color: white;
+}

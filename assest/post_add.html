@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css"></link>
+
+    <
+  </head>
+  <body >
+
+
+    <div style="background-image:url(../assest/img/pic-4.jpg) " class="home">
+      <h1  class="text-end">Farming Assistant Web Service</h1>
+    </div>
+
+    <div class="d-flex justify-content-evenly" style="background-color: black;">
+      <button class="header">Post Advertisement</button>
+      <button class="header">Crop Received</button>
+      <button class="header">Logout</button>
+      <br><br>
+    </div>
+ <br>
+    <div style="  text-align: center;" >
+     <h2 class="text-center"> Post Add</h2>
+     <br>
+    
+         Crop ID:-
+         <input class="text-start" type="email"
+         placeholder="ID"/>
+         <br><br>
+         Crop Name:-
+         <input class="text-start" type="Name">
+         <br /> <br />
+         Crop Image:-
+         <img id="blah" alt="your image" width="150" height="150" />
+
+<input type="file" 
+    onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+         <br/> <br/>
+         Required Quantity:-
+         <input class="text-start" type="quantity"
+         placeholder="Quantity"/>
+<br><br>
+         Mobile No. :-
+         <input class="text-start" type="mobile np."
+         placeholder="MO. NO."/>
+         <br><br>
+    
+          <button type="button" class="btn  btn-sm" id="add" style="background-color: rgb(188, 193, 195)">Submit</button>
+
+    
+
+    <div>
+      <h5>Products</h5>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Crop Id</th>
+            <th scope="col">Crop Name</th>
+            <th scope="col">Required Quantity</th>
+            <th scope="col">Mobile No.</th>
+          </tr>
+        </thead>
+        <tbody id="tablebody">
+          <tr>
+            <th scope="row">1</th>
+            <td>corn </td>
+            <td>4</td>
+            <td>11883377</td>
+          </tr>
+          
+          
+        </tbody>
+      </table>
+    </div>
+    </div>
+
+<script>
+  add= document.getelementbyid("add");
+  add.addEventListener("click",()=>{
+    console.log(updating)
+    crop=document.getelementbyid('Crop Id').value
+    name=document.getelementbyid('Crop Name').value
+    quantity=document.getelementbyid('Required Quantity').value
+    no=document.getelementbyid('Mobile No.').value
+    if(localStorage.getproduct('productJosn')){
+      productJsonArray=[];
+      productJsonArray.push([crop,name,quantity,no]);
+      localStorage.setproduct('productJson',JSON.stringify(productJsonArray))
+    }
+    else{
+        productJsonArrayStr=localStorage.getproduct('productJson')
+        productJsonArray=JSON.parse(productJsonArrayStr);
+        productJsonArray.push([crop,name,quantity,no]);
+        localStorage.setproduct('productJson',JSON.stringify(productJsonArray))
+
+    }
+    tablebody=document.getelementbyid("tablebody");
+    let str="";
+    productJsonArray.array.forEach((element,index) => {
+      str="";
+      <tr>
+            <th scope="row">${index+1}</th>
+            <td>${element[0]}</td>
+            <td>${index+1}</td>
+            <td>${index+1}</td>
+          </tr>
+      
+        
+    });
+    tablebody.innerhtml=str;
+  
+  });
+
+
+
+</script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>]
+    <script src="./js/script.js"></script>
+  </body>
+</html>
